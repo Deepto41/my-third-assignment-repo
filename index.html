@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!-- Daisy Ui CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Tailwind customization -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#179800',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/ad3397fc14.js" crossorigin="anonymous"></script>
+
+    <title>Nature Platter</title>
+
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+
+    </style>
+
 </head>
-<body>
+<body class="sora-font mx-auto mt-3">
+
+    <header class="mb-17  ">
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      
+                  </div>
+                 <a href="#"><img src="./c2-assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 sm-hidden">
+                    <li><a class="font-regular text-black">Product</a></li>
+                    <li><a class="font-regular text-black">Services</a></li>
+                    <li><a class="font-regular text-black">Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+
+                    <a href="#"><i class="fa-solid fa-magnifying-glass text-bold  text-2xl mr-6"></i></a>
+
+
+
+                   <a href="#"><i class="fa-solid fa-cart-shopping text-2xl mr-6 font-bold"></i></a>
+
+
+                  
+                    
+                    <button class="btn btn-outline  py-[10px] px-[30px] ml-3 border-2 border-[#179800] text-black font-regular">Login</button>
+
+                    <button class="btn btn-outline  py-[10px] px-[30px] ml-3 bg-[#179800] border-none text-white">Register</button>
+
+                    <i class="fa-solid fa-bars lg:hidden md:hidden text-[#179800]"></i>
+                </div>
+              </div>
+        </nav>
+
+        <!-- hero-section -->
+         <div class="mx-auto">
+            <h1 class="text-center font-semibold text-6xl mt-16 mb-6 text-black">Freshness <span class="text-[#179800]">You Can <br>
+                Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-center font-regular text-xl text-[#111111] mb-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <img class="ratio-1031/838 mx-auto mt-4" src="./c2-assets/hero-vegetables.png" alt="">
+         </div>
+
+    </header>
+
+    <main></main>
+
+    <footer></footer>
     
 </body>
 </html>
