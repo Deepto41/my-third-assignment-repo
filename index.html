@@ -22,7 +22,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'primary-color': '#179800',
+            
           }
         }
       }
@@ -45,7 +45,7 @@
 <body class="sora-font mx-auto mt-3">
 
     <header class="mb-17 bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] mx-auto">
-        <nav class="w-11/12 mx-auto ">
+        <nav class="w-11/12 mx-auto border-b-2  border-b-green-300">
             <div class="navbar flex justify-around ">
                 <div class="navbar-start ">
                   <div class="dropdown">
@@ -58,29 +58,30 @@
                   </div>
                  <a href="#"><img class="-ml-8" src="./c2-assets/logo-header.png" alt=""></a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 sm-hidden">
+                <div class="navbar-center lg:flex hidden">
+                  <ul class="menu menu-horizontal px-1 ">
                     <li><a class="font-regular lg:text-sm text-black">Product</a></li>
                     <li><a class="font-regular lg:text-sm text-black">Services</a></li>
                     <li><a class="font-regular lg:text-sm text-black">Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end  ">
+                <div class="navbar-end ">
 
-                    <a href="#"><i class="fa-solid fa-magnifying-glass text-bold  text-2xl mr-6"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass lg: text-bold  text-2xl mr-6 hidden lg:block"></i></a>
 
 
 
-                   <a href="#"><i class="fa-solid fa-cart-shopping text-2xl mr-6 font-bold "></i></a>
+                   <a href="#"><i class="fa-solid fa-cart-shopping text-2xl mr-6 font-bold hidden lg:block "></i></a>
 
 
                   
                     
-                    <button class="btn btn-outline  py-[10px] px-[30px] ml-3 border-2 border-[#179800] text-black font-regular  ">Login</button>
+                    <button class="btn btn-outline  py-[10px] px-[30px] ml-3 border-2 border-[#179800] text-black font-regular hidden lg:block ">Login</button>
 
-                    <button class="btn btn-outline  py-[10px] px-[30px] ml-3 bg-[#179800] border-none text-white  ">Register</button>
+                    <button class="btn btn-outline  py-[10px] px-[30px] ml-3 bg-[#179800] border-none text-white hidden lg:block  ">Register</button>
 
-                    <i class="fa-solid fa-bars lg:hidden md:hidden text-[#179800] font-bold text-3xl"></i>
+                    <i class="fa-solid fa-bars lg:hidden md:hidden text-[#179800] font-bold text-3xl items-center"></i>
+                    
                 </div>
               </div>
         </nav>
@@ -89,7 +90,7 @@
          <div class="mx-auto">
             <h1 class="text-center font-semibold text-3xl mx-7 lg:text-6xl mt-16 mb-6 text-black">Freshness <span class="text-[#179800]">You Can <br>
                 Count</span> On, Prices You’ll Love!</h1>
-            <p class="text-center font-regular text-sm mx-8 lg:text-xl text-[#111111] mb-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <p class="text-center lg:font-regular font-light text-sm mx-8 lg:text-xl text-[#111111] mb-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
             <img class="aspect-ratio:1031/838 mx-auto mt-4" src="./c2-assets/hero-vegetables.png" alt="">
          </div>
 
@@ -100,30 +101,30 @@
     <main>
 
       <!-- service section start -->
-     <section class="w-11/12 mx-auto my-36">
+     <section class="w-11/12 mx-auto lg:my-36 my-12">
 
       <h1 class="font-semibold text-justify text-4xl mb-11 text-[#179800]">Services</h1>
  
     <!-- card-section -->
 
     <!-- card container -->
-     <div class="flex  justify-center gap-2 items-center mb-32">
+     <div class="lg:flex   justify-center  lg:gap-5 items-center mb-32">
      <!-- card-1 -->
-      <div class=" bg-[#EFEBE3]  px-8 py-8 rounded-xl ">
-        <img class="px-36 mb-6" src="./c2-assets/service.png" alt="">
+      <div class=" bg-[#EFEBE3]  px-8 py-8 rounded-xl mb-4 ">
+        <img class=" lg:px-36 mb-6 mx-auto" src="./c2-assets/service.png" alt="">
         <h2 class="text-center mb-3 font-semibold text-2xl">24/7 Services </h2>
         <p class="text-center font-light text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
       </div>
       <!-- card-2 -->
-       <div class="bg-[#EFEBE3]   px-8 py-8 rounded-xl">
-       <img class="px-36  mb-6" src="./c2-assets/delivery.png" alt="">
+       <div class="bg-[#EFEBE3]   px-8 py-8 rounded-xl mb-4">
+       <img class="lg:px-36  mb-6 mx-auto" src="./c2-assets/delivery.png" alt="">
        <h2 class="text-center mb-3 font-semibold text-2xl">Fast Delivery</h2>
        <p class="text-center  font-light text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
       </div>
 
       <!-- card-3 -->
-       <div class="bg-[#EFEBE3]   px-8 py-8 rounded-xl">
-        <img class="px-36  mb-6" src="./c2-assets/healthy.png" alt="">
+       <div class="bg-[#EFEBE3] mb-4  px-8 py-8 rounded-xl">
+        <img class="lg:px-36  mb-6 mx-auto" src="./c2-assets/healthy.png" alt="">
         <h2 class="text-center mb-3  font-semibold text-2xl">Healthy Products </h2>
         <p class="text-center  font-light text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
        </div>
@@ -140,13 +141,13 @@
         <!-- section-container -->
         <div class="w-11/12 mx-auto">
 
-        <h2 class="text-justify font-semibold  text-4xl text-[#179800] pt-36 pb-12">Popular Products</h2>
+        <h2 class="text-justify font-semibold  text-4xl text-[#179800] pt-28 lg:pt-36 lg:pb-12 pb-11">Popular Products</h2>
 
 
         <!-- card container -->
-          <div class="flex gap-6 justify-around pb-36 w-full mx-auto">
+          <div class=" lg:flex  gap-6 justify-around pb-28 w-full mx-auto">
             <!-- card-left -->
-             <div class="bg-gradient-to-t from-[#ABED9F] to-[#53DB3A] rounded-xl">
+             <div class="bg-gradient-to-t from-[#ABED9F] to-[#53DB3A] rounded-xl mb-3">
               <h2 class="font-bold text-3xl pt-12 pl-9 text-white mb-5">30% off</h2>
               <p class="pl-8 font-regular text-lg mb-3">Discover a world of treats,toy and <br> essentials handpicked for</p>
               
@@ -155,27 +156,27 @@
              </div>
 
              <!-- card-right -->
-              <div class="grid grid-cols-3 gap-6">
+              <div class=" grid grid-cols-2 lg:grid-cols-3 mx-auto  gap-6">
                 <!-- card-right-1 -->
                 <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
                   <div>
-                   <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 43.png " alt="">
-                  </div>
-                  <div class=" pr-9">
+                    <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 43.png" alt="">
+                   </div>
+                   <div class="pr-9">
                     <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
-                   <h3 class="text-xl font-medium">Onion 1 KG</h3>
-                   <p class="text-lga">$39/99</p>
-                  </div>
-
+                    <h3 class="text-xl font-medium">Onion 1 KG</h3>
+                    <p class="text-lga">$39/99</p>
+                   </div>
+                   
                 </div>
                  <!-- card-right-2 -->
                  <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
                   <div>
-                    <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 41.png" alt="">
+                    <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 44.png" alt="">
                    </div>
                    <div class="pr-9">
                     <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
-                    <h3 class="text-xl font-medium">Tomato 500g</h3>
+                    <h3 class="text-xl font-medium">Potato 1 KG</h3>
                     <p class="text-lga">$39/99</p>
                    </div>
                    
@@ -183,14 +184,15 @@
                   <!-- card-right-3 -->
                   <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
                     <div>
-                      <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 44.png" src="" alt="">
+                      <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 41.png" alt="">
                      </div>
                      <div class="pr-9">
                       <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
-                      <h3 class="text-xl font-medium">Potato 1 KG</h3>
+                      <h3 class="text-xl font-medium">Tomato 500g</h3>
                       <p class="text-lga">$39/99</p>
                      </div>
-                   </div>
+                     
+                  </div>
                    <!-- card-right-4 -->
                    <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
                     <div>
@@ -206,14 +208,14 @@
                     <!-- card-right-5 -->
                     <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
                       <div>
-                       <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 43.png " alt="">
-                      </div>
-                      <div class=" pr-9">
+                        <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 43.png" alt="">
+                       </div>
+                       <div class="pr-9">
                         <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
-                       <h3 class="text-xl font-medium">Onion 1 KG</h3>
-                       <p class="text-lga">$39/99</p>
-                      </div>
-   
+                        <h3 class="text-xl font-medium">Onion 1 KG</h3>
+                        <p class="text-lga">$39/99</p>
+                       </div>
+                       
                     </div>
                      <!-- card-right-6 -->
                      <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
@@ -230,37 +232,39 @@
                       <!-- card-right-7 -->
                       <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
                         <div>
-                         <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 43.png " alt="">
-                        </div>
-                        <div class=" pr-9">
-                          <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
-                         <h3 class="text-xl font-medium">Onion 1 KG</h3>
-                         <p class="text-lga">$39/99</p>
-                        </div>
-     
-                      </div>
-                       <!-- card-right-8 -->
-                       <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
-                        <div>
-                          <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 44.png" src="" alt="">
+                          <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 44.png" alt="">
                          </div>
                          <div class="pr-9">
                           <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
                           <h3 class="text-xl font-medium">Potato 1 KG</h3>
                           <p class="text-lga">$39/99</p>
                          </div>
-                       </div>
+                         
+                      </div>
+                       <!-- card-right-8 -->
+                       <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
+                        <div>
+                          <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 41.png" alt="">
+                         </div>
+                         <div class="pr-9">
+                          <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                          <h3 class="text-xl font-medium">Tomato 500g</h3>
+                          <p class="text-lga">$39/99</p>
+                         </div>
+                         
+                      </div>
                         <!-- card-right-9 -->
-                        <div class="bg-white flex justify-center items-center rounded-xl py-1 pl-4 gap-4">
+                        <div class="bg-white lg:flex justify-center items-center rounded-xl py-1 pl-4 gap-4 hidden">
                           <div>
-                            <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 44.png" src="" alt="">
+                            <img class="bg-[#EFEBE3] rounded-xl px-2 py-2" src="./c2-assets/image 41.png" alt="">
                            </div>
                            <div class="pr-9">
                             <p class="text-lg font-regular"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
-                            <h3 class="text-xl font-medium">Potato 1 KG</h3>
+                            <h3 class="text-xl font-medium">Tomato 500g</h3>
                             <p class="text-lga">$39/99</p>
                            </div>
-                         </div>
+                           
+                        </div>
               </div>
 
 
@@ -279,19 +283,19 @@
 
        <!-- arrival and offer section -->
 
-       <section class="w-11/12 mx-auto ">
+       <section class="w-11/12 mx-auto mb-96 ">
 
         <h2 class="text-[#179800] font-semibold text-3xl text-justify pt-36 pb-8">Arrival & Offers</h2>
 
         <!-- card container -->
-         <div class=" flex justify-center gap-5">
+         <div class=" lg:flex  justify-center gap-5">
           <!-- card-1 -->
-           <div class="bg-[#115414] flex justify-between rounded-xl w-[60%] ">
+           <div class="bg-[#115414] flex  items-center lg:justify-between rounded-xl lg:w-[60%] w-full mb-4">
 
             <!-- card-1 left -->
              <div>
               <img class="pb-10 pt-12 pl-10" src="./c2-assets/dawat-logo.png" alt="">
-              <a href="#"><button class="text-white bg-[#63B76D] font-regular text-2xl px-10 py-4 rounded-xl ml-10 mr-8">Cook Exotic Dishes</button></a>
+              <a href="#"><button class="text-white bg-[#63B76D] font-regular lg:text-2xl text-sm lg:px-10 px-5 py-4 lg:py-4 rounded-xl lg:ml-10 lg:mr-8">Cook Exotic Dishes</button></a>
               <h3 class="pt-6 pl-10 text-white text-regular text-3xl">UP to <span class="font-bold text-4xl text-[#FFFFFF]">20% OFF</span></h3>
              </div>
 
@@ -326,58 +330,53 @@
        <!-- arrival and offer end -->
 
 
-       <!-- grocery news section  -->
+      
 
-       <section class="w-11/12 bg-[#EFEBE3] mx-auto mt-44 rounded-xl mb-56 ">
+    </main>
+
+    <footer class="bg-[#179800] relative">
+
+
+      <section class="w-11/12 bg-[#EFEBE3] mx-auto mt-44 rounded-xl mb-56 absolute bottom-36 right-5 left-4 ">
 
         
-        <div class="flex justify-around">
+        <div class="flex justify-center mx-auto ">
           <!-- grocary-card -->
 
           <!-- card-left -->
            <div class="">
-            <img class="mt-14 mb-14" src="./c2-assets/vegetable-busket.png" alt="">
+            <img class="mt-14 lg:mb-14 " src="./c2-assets/vegetable-busket.png" alt="">
 
            </div>
 
            <!-- card-right -->
-            <div class="mb-6">
+            <div class="mb-6 mx-auto">
               <h2 class="text-black text-4xl font-semibold pt-24 mb-5">Get Grocery News!</h2>
               <p class="text-black font-regular text-xl mb-9">Exclusive training tips, ticks, product deals and more.</p>
 
-              <input type="text" placeholder="Enter email...." class="input input-bordered  w-[472px] mb-9 " />
+              <input type="text" placeholder="Enter email...." class="input input-bordered lg:w-[472px] lg:mb-9 w-11/12 " />
               <br>
-              <a href="#"><button class="bg-[#179800] py-2 px-7 rounded-lg text-white mb-16">Subscribe</button></a>
+              <a href="#"><button class="bg-[#179800] py-2 px-7 rounded-lg text-white  mb-16  ">Subscribe</button></a>
 
             </div>
 
         </div>
 
-
-
-
-
-
          <!-- end-grocary-items -->
        </section>
 
-    </main>
-
-    <footer class="bg-[#179800]  ">
-
-
-
+   
       <!-- footer container -->
-       <div class="w-11/12 mx-auto flex justify-between items-center">
+       <div class="w-11/12 mx-auto lg:flex  lg:justify-between items-center  ">
 
         <!-- footer left -->
-         <div class="pb-36">
-          <img class="pt-80" src=".//c2-assets/logo-footer.png" alt="">
-          <p class="text-white font-regular text-xl py-2">Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends</p>
+         <div class=" lg:pb-36 pb-2">
+          <img class="lg:pt-80 pt-32" src=".//c2-assets/logo-footer.png" alt="">
+          <p class="text-white font-regular lg:text-xl py-2">Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends</p>
          </div>
 
          <!-- footer middle -->
-          <div class="pt-40">
+          <div class="lg:pt-40 pt-10 ">
             <ul>
               <li class="text-xl font-regular text-[#EFEBE3] pb-8 ">Product</li>
               <li class="text-xl font-regular text-[#EFEBE3] pb-8">Services</li>
@@ -386,7 +385,7 @@
           </div>
 
           <!-- footer right -->
-           <div class="pt-56">
+           <div class="lg:pt-56 pt-20 pb-4">
             <p class="text-[#EFEBE3] font-medium text-lg mb-4">Follow Us</p>
             
             <div class="flex gap-7">
